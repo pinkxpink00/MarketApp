@@ -12,7 +12,7 @@
     </UserControl.DataContext>
 
     <StackPanel>
-        <TextBlock Text="Discovered"
+        <TextBlock Text="Discovered top 10 currencies"
                    Foreground="White"
                    FontSize="25"
                    HorizontalAlignment="Left"
@@ -45,12 +45,7 @@
                         </ListBox.ItemTemplate>
                     </ListBox>
 
-                    <StackPanel>
-                        <TextBlock Text="Top Currencies"
-                                   Foreground="Black"
-                                   FontSize="30"
-                                   Margin="10 20 0 0 "/>
-                    </StackPanel>
+               
 
                     <Image Width="268"
                            Height="248"
