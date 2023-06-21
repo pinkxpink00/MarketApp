@@ -7,11 +7,11 @@ using System.Windows;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набор атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("MarketApp")]
+[assembly: AssemblyTitle("CryptoCurrency")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MarketApp")]
+[assembly: AssemblyProduct("CryptoCurrency")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -22,7 +22,7 @@ using System.Windows;
 [assembly: ComVisible(false)]
 
 //Чтобы начать создание локализуемых приложений, задайте
-//<UICulture>CultureYouAreCodingWith</UICulture> в файле .csproj
+//<UICulture>CultureYouAreCodingWith</UICulture> в файле	 .csproj
 //в <PropertyGroup>. Например, при использовании английского (США)
 //в своих исходных файлах установите <UICulture> в en-US.  Затем отмените преобразование в комментарий
 //атрибута NeutralResourceLanguage ниже.  Обновите "en-US" в

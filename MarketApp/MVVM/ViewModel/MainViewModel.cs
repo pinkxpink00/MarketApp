@@ -56,6 +56,12 @@ namespace CryptoCurrency.MVVM.ViewModel
 			set { _currentView = value; OnPropertyChanged(); }
 		}
 
+		public MainViewModel()
+		{
+			//HomeViewModel = new HomeViewModel(_apiClient);
+			//CurrentView = new HomeViewModel(_apiClient);
+
+		}
 	}
 
 
