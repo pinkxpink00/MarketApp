@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\kyper\source\repos\MarketApp\MarketApp\App.xaml
-1219584333
+3659388837
 
-13-551652557
+211333459100
 19-2097750656
-MainWindow.xaml;
+MVVM\View\MainWindow.xaml;MVVM\View\DetailsView.xaml;MVVM\View\HomeView.xaml;
 
 False
 
