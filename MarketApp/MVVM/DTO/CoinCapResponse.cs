@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CryptoCurrency.MVVM.Model;
+using Newtonsoft.Json;
 
-namespace MarketApp.MVVM.DTO
+namespace CryptoCurrency.MVVM.DTO
 {
-	internal class CoinCapResponse
+	public class CoinCapResponse
 	{
+		[JsonProperty("data")]
+		public CurrencyData[] Data { get; set; }
 	}
 }

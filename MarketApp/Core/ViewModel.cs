@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketApp.Core
+namespace CryptoCurrency.Core
 {
-	internal class ViewModel
+	public abstract class ViewModel : ObservableObject
 	{
 	}
 }

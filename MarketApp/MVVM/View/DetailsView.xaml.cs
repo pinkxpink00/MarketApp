@@ -13,11 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MarketApp.MVVM.View
+namespace CryptoCurrency.MVVM.View
 {
-	/// <summary>
-	/// Логика взаимодействия для DetailsView.xaml
-	/// </summary>
+	
 	public partial class DetailsView : UserControl
 	{
 		public DetailsView()

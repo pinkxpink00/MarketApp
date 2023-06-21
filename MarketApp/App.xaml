@@ -1,9 +1,29 @@
-﻿<Application x:Class="MarketApp.App"
+﻿<Application x:Class="CryptoCurrency.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:MarketApp"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:CryptoCurrency"
+             xmlns:viewModel="clr-namespace:CryptoCurrency.MVVM.ViewModel"
+             xmlns:view="clr-namespace:CryptoCurrency.MVVM.View">
+
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/CloseButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+
+
+            <DataTemplate DataType="{x:Type viewModel:DetailsViewModel}">
+                <view:DetailsView/>
+            </DataTemplate>
+
+
+        </ResourceDictionary>
+
     </Application.Resources>
 </Application>

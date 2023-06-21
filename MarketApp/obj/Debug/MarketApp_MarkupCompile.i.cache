@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\kyper\source\repos\MarketApp\MarketApp\App.xaml
-3659388837
+6-1002401927
 
 211333459100
 19-2097750656
-MVVM\View\MainWindow.xaml;MVVM\View\DetailsView.xaml;MVVM\View\HomeView.xaml;
+MVVM\View\MainWindow.xaml;MVVM\View\DetailsView.xaml;MVVM\View\HomeView.xaml;Theme\CloseButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\TextButtonTheme.xaml;
 
 False
 

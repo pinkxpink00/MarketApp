@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketApp.MVVM.Model
+namespace CryptoCurrency.MVVM.Model
 {
-	internal class CurrencyData
+	public class CurrencyData
 	{
+		public string Id { get; set; }
+		public string Rank { get; set; }
+		public string Symbol { get; set; }
+		public string Name { get; set; }
 	}
 }

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketApp.MVVM.Model
+namespace CryptoCurrency.MVVM.Model
 {
-	internal class DetailsModel
+	public class DetailsModel
 	{
+		public string NameCoin { get; set; }
 	}
 }

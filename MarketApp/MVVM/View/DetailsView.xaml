@@ -1,12 +1,62 @@
-﻿<UserControl x:Class="MarketApp.MVVM.View.DetailsView"
+﻿<UserControl x:Class="CryptoCurrency.MVVM.View.DetailsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:MarketApp.MVVM.View"
+             xmlns:local="clr-namespace:CryptoCurrency.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="500" d:DesignWidth="800"
+             Background="Transparent">
+    <StackPanel>
+        <TextBlock Text="Details"
+                   Foreground="White"
+                   FontSize="25"
+                   HorizontalAlignment="Left"
+                   Margin="0 0 0 20"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Border Width="700"
+                    Height="450"
+                    CornerRadius="10 ">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="LightGray" Offset="0.0"/>
+                        <GradientStop Color="DarkGray" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Grid>
+
+                    <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" />
+                    <ListBox ItemsSource="{Binding SearchResults}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding NameCoin}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <Image Width="268"
+                           Height="248"
+                           Source="/Images/blockchain.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom" Margin="0,0,-68,-74" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-21.455"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+
+                </Grid>
+
+            </Border>
+
+        </StackPanel>
+    </StackPanel>
 </UserControl>
